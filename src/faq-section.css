@@ -1,0 +1,44 @@
+.faq-section { position: relative; isolation: isolate; overflow: clip; background: #171716; color: #f5f5f3; border-top: 1px solid #ffffff20; padding: clamp(64px, 6vw, 112px) var(--page-gutter); }
+.faq-environment { position: absolute; inset: 0; width: 100%; height: 100%; object-fit: cover; object-position: center; z-index: -2; }
+.faq-section::before { content: ""; position: absolute; inset: 0; z-index: -1; background: linear-gradient(90deg, #10111265, #101112aa 43%, #101112b8); }
+.faq-layout { display: grid; grid-template-columns: minmax(0, 36fr) minmax(0, 64fr); gap: clamp(40px, 5vw, 96px); max-width: 1720px; margin: auto; align-items: start; }
+.faq-kicker { display: flex; align-items: center; gap: 14px; margin: 0 0 25px; font-size: 12px; letter-spacing: .18em; }
+.faq-kicker::before { content: ""; width: 34px; height: 2px; background: var(--accent); flex-shrink: 0; }
+.faq-header h2 { font-size: clamp(36px, 3.6vw, 68px); line-height: 1.06; letter-spacing: -.045em; margin: 0; }
+.faq-header h2 span { color: var(--accent); }
+.faq-intro { max-width: 360px; margin: 24px 0 30px; color: #e0ddd8; font-size: 16px; line-height: 1.65; }
+.faq-contact { display: inline-flex; align-items: center; justify-content: space-between; gap: 16px; padding: 18px 0; border-bottom: 1px solid var(--accent); color: #fff; font-size: 12px; font-weight: 700; letter-spacing: .035em; text-decoration: none; min-height: 56px; }
+.faq-contact span { color: var(--accent); font-size: 25px; }
+.faq-contact:hover { color: var(--accent); }
+.faq-item { border-bottom: 1px solid #ffffff30; transition: border-color 300ms; }
+.faq-item:first-child { border-top: 1px solid #ffffff30; }
+.faq-item.is-open { border-bottom-color: #f4773070; }
+.faq-item h3 { margin: 0; }
+.faq-question { display: grid; grid-template-columns: 24px minmax(0, 1fr) 20px; align-items: center; gap: 18px; width: 100%; min-height: 78px; padding: 22px 4px; background: none; border: 0; border-radius: 0; color: inherit; text-align: left; font: 700 clamp(14px, 1.05vw, 18px)/1.5 Arial, sans-serif; cursor: pointer; }
+.faq-number { font-size: 12px; font-weight: 400; color: #b9b6b1; transition: color 300ms; }
+.faq-plus { width: 18px; height: 18px; position: relative; color: var(--accent); }
+.faq-plus::before, .faq-plus::after { content: ""; position: absolute; background: currentColor; width: 16px; height: 1.5px; left: 1px; top: 8px; transition: transform 300ms; }
+.faq-plus::after { transform: rotate(90deg); }
+.is-open .faq-plus::after { transform: rotate(0); }
+.is-open .faq-number, .faq-question:hover .faq-number { color: var(--accent); }
+.faq-section :is(.faq-question, .faq-contact):focus-visible { outline: 2px solid var(--accent); outline-offset: 4px; }
+.faq-answer { display: grid; grid-template-rows: 0fr; transition: grid-template-rows 320ms ease; }
+.faq-answer-inner { min-height: 0; overflow: hidden; opacity: 0; transform: translateY(-4px); transition: opacity 260ms ease, transform 320ms ease; }
+.faq-answer p { margin: 0; padding: 0 42px 24px 46px; color: #ddd9d3; font-size: 15px; line-height: 1.7; max-width: 760px; }
+.is-open .faq-answer { grid-template-rows: 1fr; }
+.is-open .faq-answer-inner { opacity: 1; transform: translateY(0); }
+.faq-reveal.has-reveal { opacity: 0; transform: translateY(12px); transition: opacity 380ms ease, transform 380ms ease; }
+.faq-reveal.is-visible { opacity: 1; transform: none; }
+@media (max-width: 850px) {
+  .faq-layout { grid-template-columns: 1fr; gap: 40px; }
+  .faq-header h2 { font-size: clamp(38px, 6vw, 54px); }
+  .faq-intro { max-width: 440px; margin: 20px 0 18px; }
+  .faq-environment { object-position: 18% center; }
+  .faq-section::before { background: linear-gradient(90deg, #101112b0, #101112d2); }
+  .faq-question { min-height: 72px; gap: 12px; grid-template-columns: 20px minmax(0, 1fr) 18px; padding: 20px 2px; }
+  .faq-answer p { padding: 0 12px 24px 34px; }
+}
+@media (prefers-reduced-motion: reduce) {
+  .faq-section *, .faq-section *::before, .faq-section *::after { transition: none !important; }
+  .faq-reveal.has-reveal { opacity: 1; transform: none; }
+}

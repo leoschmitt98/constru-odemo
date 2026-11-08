@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="pt-BR">
+<head><meta charset="UTF-8"/><meta name="viewport" content="width=device-width, initial-scale=1.0"/><meta name="theme-color" content="#171a18"/><meta name="description" content="Explore o catálogo demonstrativo Alicerce. Busque, filtre e conheça materiais para cada etapa da sua obra."/><title>Catálogo — Alicerce</title></head>
+<body class="catalog-page">
+  <a class="catalog-skip" href="#catalog-results">Ir para os produtos</a>
+  <header class="site-header catalog-header">
+    <a class="brand" href="/" aria-label="Alicerce, Home"><svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M5 42V19L24 5l19 14v23H30V28H18v14H5Z" stroke="currentColor" stroke-width="4"/><path d="m24 5 19 14v23H30V28H24" stroke="#f47730" stroke-width="4"/></svg><span><strong>ALICERCE<span class="brand-dot">.</span></strong><small>MATERIAIS DE CONSTRUÇÃO</small></span></a>
+    <nav class="desktop-nav" aria-label="Navegação principal"><a href="/">Home</a><a class="active" aria-current="page" href="/catalogo">Catálogo</a><button data-info="Sobre">Sobre</button><button data-info="Contato">Contato</button></nav>
+    <button class="header-cta" data-info="WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.1-4.8a8.5 8.5 0 1 1 16.4-3.7Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1-1-3-2.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg><span>Falar no WhatsApp</span></button>
+    <button class="menu-toggle" aria-label="Abrir menu" aria-controls="catalog-mobile-nav" aria-expanded="false"><span></span><span></span></button>
+    <nav class="mobile-nav" id="catalog-mobile-nav" aria-label="Navegação mobile" hidden><a href="/">Home</a><a href="/catalogo" aria-current="page">Catálogo</a><button data-info="Sobre">Sobre</button><button data-info="Contato">Contato</button></nav>
+  </header>
+  <main>
+    <section class="catalog-hero" aria-labelledby="catalog-title"><img src="/images/catalog-environment.webp" alt="" width="1672" height="941" fetchpriority="high"/><div class="catalog-hero-inner"><p class="catalog-kicker">CATÁLOGO</p><h1 id="catalog-title">Tudo para sua obra<br/><span>em um só lugar.</span></h1><p>Qualidade, variedade e soluções para cada etapa do seu projeto.</p></div><div class="catalog-hero-note" aria-hidden="true">DA PRIMEIRA ESCOLHA<br/>AO ÚLTIMO DETALHE.</div></section>
+    <section class="catalog-workspace" aria-label="Busca e filtros do catálogo">
+      <div class="catalog-chips" role="group" aria-label="Categorias rápidas"></div>
+      <div class="catalog-layout">
+        <aside class="catalog-sidebar" aria-label="Filtros de produtos"><div id="desktop-filter-host"></div></aside>
+        <div class="catalog-content">
+          <div class="catalog-toolbar"><div class="catalog-search"><label class="sr-only" for="catalog-search">Buscar produtos</label><input id="catalog-search" type="search" placeholder="Buscar produtos, categorias ou materiais..." autocomplete="off"/><span aria-hidden="true">⌕</span></div><button id="open-filters" class="catalog-filter-trigger" aria-controls="filter-dialog" aria-expanded="false">Filtrar <span id="filter-number"></span></button><div class="catalog-sort"><label for="catalog-sort">Ordenar por</label><select id="catalog-sort"><option value="relevance">Mais relevantes</option><option value="price-asc">Menor preço</option><option value="price-desc">Maior preço</option><option value="name">Nome A–Z</option><option value="offers">Ofertas</option></select></div></div>
+          <div class="catalog-result-meta"><p id="result-count" role="status" aria-live="polite" aria-atomic="true"></p><p>Produtos e preços demonstrativos</p></div>
+          <div id="catalog-results" class="catalog-grid" tabindex="-1"></div>
+          <div id="catalog-empty" class="catalog-empty" hidden><span aria-hidden="true">⌕</span><h2>Nenhum produto encontrado.</h2><p>Tente alterar os filtros ou realizar uma nova busca.</p><button class="catalog-button" data-reset>Limpar filtros</button></div>
+          <noscript><p>Ative o JavaScript para buscar e explorar os produtos do catálogo.</p></noscript>
+        </div>
+      </div>
+    </section>
+  </main>
+  <dialog id="filter-dialog" class="catalog-dialog filter-dialog" aria-labelledby="filter-title"><div class="catalog-dialog-heading"><h2 id="filter-title">Filtrar produtos</h2><button class="catalog-close" data-close="filter-dialog" aria-label="Fechar filtros">×</button></div><div id="mobile-filter-host"></div><div class="filter-dialog-actions"><button class="catalog-button catalog-button-secondary" data-reset>Limpar</button><button class="catalog-button" id="show-filter-results">Ver produtos</button></div></dialog>
+  <dialog id="product-dialog" class="catalog-dialog product-dialog" aria-labelledby="product-dialog-title"><button class="catalog-close" data-close="product-dialog" aria-label="Fechar produto">×</button><div id="product-detail"></div></dialog>
+  <dialog id="catalog-info" class="catalog-dialog catalog-info" aria-labelledby="info-title"><button class="catalog-close" data-close="catalog-info" aria-label="Fechar informação">×</button><p class="catalog-kicker">ALICERCE · DEMONSTRAÇÃO</p><h2 id="info-title"></h2><p id="info-message"></p><a id="info-whatsapp" class="catalog-button" target="_blank" rel="noopener" hidden>Preparar mensagem no WhatsApp →</a></dialog>
+  <script type="module" src="/src/catalog/catalog.js"></script>
+</body>
+</html>

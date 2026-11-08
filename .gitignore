@@ -1,0 +1,30 @@
+# Dependencies and generated builds
+node_modules/
+dist/
+
+# Local tooling and verification artifacts
+.playwright-mcp/
+.verification/
+desktop-final.png
+mobile-final.png
+
+# Logs and caches
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+.cache/
+.vite/
+
+# Local environment files and secrets
+.env
+.env.*
+!.env.example
+
+# Editor and operating-system files
+.vscode/
+.idea/
+.DS_Store
+Thumbs.db
+Desktop.ini

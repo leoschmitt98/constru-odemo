@@ -1,0 +1,200 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/svg+xml" href="/favicon.svg" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="theme-color" content="#171a18" />
+    <meta name="description" content="Alicerce — materiais para construir, reformar e transformar. Uma demonstração cinematográfica, da primeira etapa ao acabamento." />
+    <title>Alicerce — Da base à sua próxima conquista</title>
+  </head>
+  <body>
+    <main id="inicio">
+      <section class="hero-scroll-section" aria-label="Da fundação ao acabamento: role para construir a casa">
+        <div class="hero-sticky">
+          <div class="hero-media" aria-hidden="true">
+            <video id="construction-video" muted playsinline preload="auto" poster="/images/construction-start.jpg" tabindex="-1">
+              <source src="/video/construction.mp4" type="video/mp4" />
+            </video>
+            <div class="hero-shade"></div>
+          </div>
+          <header class="site-header">
+            <a class="brand" href="#inicio" aria-label="Alicerce, início">
+              <svg class="brand-mark" viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M5 42V19L24 5l19 14v23H30V28H18v14H5Z" stroke="currentColor" stroke-width="4"/><path d="m24 5 19 14v23H30V28H24" stroke="#f47730" stroke-width="4"/></svg>
+              <span><strong>ALICERCE<span class="brand-dot">.</span></strong><small>MATERIAIS DE CONSTRUÇÃO</small></span>
+            </a>
+            <nav class="desktop-nav" aria-label="Navegação principal">
+              <a class="active" href="#inicio" aria-current="page">Início</a>
+              <button data-demo="Produtos">Produtos</button><button data-demo="Categorias">Categorias</button><button data-demo="Ofertas">Ofertas</button><button data-demo="Sobre">Sobre</button><button data-demo="Contato">Contato</button>
+            </nav>
+            <button class="header-cta" data-demo="WhatsApp"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.1-4.8a8.5 8.5 0 1 1 16.4-3.7Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1-1-3-2.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg><span>Falar no WhatsApp</span></button>
+            <button class="menu-toggle" aria-expanded="false" aria-controls="mobile-nav" aria-label="Abrir menu"><span></span><span></span></button>
+            <nav id="mobile-nav" class="mobile-nav" aria-label="Navegação mobile" hidden>
+              <a href="#inicio">Início</a><button data-demo="Produtos">Produtos</button><button data-demo="Categorias">Categorias</button><button data-demo="Ofertas">Ofertas</button><button data-demo="Sobre">Sobre</button><button data-demo="Contato">Contato</button>
+            </nav>
+          </header>
+          <div class="hero-copy">
+            <p class="eyebrow">DA BASE À SUA PRÓXIMA CONQUISTA</p>
+            <h1 aria-label="Construa. Reforme. Transforme.">
+              <span class="headline-line line-build" aria-hidden="true">CONSTRUA.</span>
+              <span class="headline-line line-renovate" aria-hidden="true">REFORME.</span>
+              <span class="headline-line line-transform" aria-hidden="true">TRANSFORME.</span>
+            </h1>
+            <div class="hero-details" inert>
+              <p class="description">Tudo o que sua obra precisa,<br class="desktop-break" /> do início ao acabamento.</p>
+              <div class="hero-actions">
+                <button class="button button-primary" data-demo="Produtos">Explorar produtos <span aria-hidden="true">↗</span></button>
+                <button class="button button-outline" data-demo="Orçamento">Solicitar orçamento <span aria-hidden="true">→</span></button>
+              </div>
+            </div>
+          </div>
+          <aside class="campaign-note" aria-label="Mais que materiais. Novas possibilidades."><span></span><p>MAIS QUE<br />MATERIAIS.<br /><strong>NOVAS<br />POSSIBILIDADES.</strong></p></aside>
+          <div class="hero-bottom">
+            <div class="construction-timeline" aria-label="Etapas da construção">
+              <button data-stage="0" class="stage is-active"><span class="stage-number">01</span><span>Fundação</span></button>
+              <button data-stage="0.4" class="stage"><span class="stage-number">02</span><span>Estrutura</span></button>
+              <button data-stage="0.7" class="stage"><span class="stage-number">03</span><span>Acabamento</span></button>
+              <button data-stage="1" class="stage"><span class="stage-number">04</span><span>Seu novo começo</span></button>
+            </div>
+            <div class="bottom-meta"><button class="scroll-cue" aria-label="Avançar na construção"><span class="mouse-icon" aria-hidden="true"></span><span class="cue-label">ROLE PARA CONSTRUIR</span><span aria-hidden="true">↓</span></button><span class="movie-count"><span id="progress-value">00</span><span class="count-divider"> / </span>100</span></div>
+          </div>
+          <div class="progress-track" aria-hidden="true"><div class="progress-fill"></div></div>
+          <p class="video-status" role="status"></p>
+        </div>
+      </section>
+      <div class="categories-bridge" aria-hidden="true"></div>
+      <section id="categorias" class="categories-scroll" aria-labelledby="categories-title">
+        <div class="categories-sticky">
+          <header class="categories-heading">
+            <div><p class="categories-kicker">NOSSAS CATEGORIAS</p><h2 id="categories-title">Encontre o que<br /><span>sua obra</span> precisa.</h2></div>
+            <p class="categories-intro">Das fundações ao acabamento,<br class="categories-desktop-break" /> tudo para cada etapa<br class="categories-desktop-break" /> do seu projeto.</p>
+            <p class="categories-aside">GRANDES PROJETOS<br />COMEÇAM COM AS<br />ESCOLHAS CERTAS.</p>
+          </header>
+          <div class="categories-viewport" tabindex="0" role="region" aria-label="Explore as seis categorias" aria-describedby="categories-hint">
+            <div class="categories-track">
+              <a class="category-card" href="/catalogo?categoria=construcao" aria-label="Ver produtos de Construção"><img src="https://images.pexels.com/photos/20204115/pexels-photo-20204115.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Tijolos de barro empilhados" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">01</span><div class="category-copy"><h3>CONSTRUÇÃO</h3><p>Cimento, areia, blocos, argamassas e muito mais.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+              <a class="category-card" href="/catalogo?categoria=eletrica" aria-label="Ver produtos de Elétrica"><img src="https://images.pexels.com/photos/4480525/pexels-photo-4480525.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Detalhe de fios elétricos coloridos" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">02</span><div class="category-copy"><h3>ELÉTRICA</h3><p>Fios, cabos, disjuntores, interruptores e acessórios.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+              <a class="category-card" href="/catalogo?categoria=hidraulica" aria-label="Ver produtos de Hidráulica"><img src="https://images.pexels.com/photos/29301874/pexels-photo-29301874.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Tubos de PVC organizados para instalação" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">03</span><div class="category-copy"><h3>HIDRÁULICA</h3><p>Tubos, conexões, registros e soluções para instalação.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+              <a class="category-card" href="/catalogo?categoria=tintas" aria-label="Ver produtos de Tintas"><img src="https://images.pexels.com/photos/2293819/pexels-photo-2293819.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Balde de tinta e rolos de pintura" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">04</span><div class="category-copy"><h3>TINTAS</h3><p>Cores, preparação e proteção para todos os ambientes.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+              <a class="category-card" href="/catalogo?categoria=acabamentos" aria-label="Ver produtos de Acabamentos"><img src="https://images.pexels.com/photos/8817836/pexels-photo-8817836.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Madeira empilhada com textura e veios naturais" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">05</span><div class="category-copy"><h3>ACABAMENTOS</h3><p>Pisos, revestimentos, louças, metais e detalhes.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+              <a class="category-card" href="/catalogo?categoria=ferramentas" aria-label="Ver produtos de Ferramentas"><img src="https://images.pexels.com/photos/30486882/pexels-photo-30486882.jpeg?auto=compress&amp;cs=tinysrgb&amp;w=720" alt="Furadeira profissional sobre uma bancada" width="720" height="1080" loading="lazy" decoding="async" /><span class="category-number">06</span><div class="category-copy"><h3>FERRAMENTAS</h3><p>Ferramentas e acessórios para facilitar cada projeto.</p><span class="category-cta">VER PRODUTOS <span class="category-arrow" aria-hidden="true">→</span></span></div></a>
+            </div>
+          </div>
+          <div class="categories-controls"><p id="categories-hint">ROLE PARA EXPLORAR AS CATEGORIAS</p><div class="categories-meter" aria-hidden="true"><span></span></div><span class="categories-count" aria-label="Categoria em destaque"><span id="category-current">01</span> / 06</span><div class="categories-arrows"><button class="category-prev" aria-label="Categoria anterior" disabled>←</button><button class="category-next" aria-label="Próxima categoria">→</button></div></div>
+          <div class="categories-signoff" aria-hidden="true"><span>QUALIDADE EM CADA DETALHE.</span><small>DA SUA IDEIA<br />AO SEU LAR.</small></div>
+        </div>
+      </section>
+      <section id="destaques" class="products-section" aria-labelledby="products-title">
+        <img class="products-environment" src="/images/products-environment.webp" alt="" width="1672" height="941" loading="lazy" decoding="async" />
+        <div class="products-inner">
+          <header class="products-heading">
+            <div class="products-heading-copy"><p class="products-kicker products-reveal">DESTAQUES DA SEMANA</p><h2 id="products-title" class="products-reveal">Escolhas para<br />cada etapa <span>da obra.</span></h2><p class="products-intro products-reveal">Produtos selecionados com qualidade, durabilidade<br class="products-desktop-break" /> e soluções para diferentes etapas do seu projeto.</p></div>
+            <div class="products-heading-side"><p>MATERIAIS DE QUALIDADE.<br />NOVAS CONQUISTAS.</p><div class="products-arrows"><button class="product-prev" aria-label="Produto anterior" disabled>←</button><button class="product-next" aria-label="Próximo produto">→</button></div></div>
+          </header>
+          <div class="products-viewport products-reveal" tabindex="0" role="region" aria-label="Explore os cinco produtos em destaque" aria-describedby="products-hint">
+            <div class="products-track">
+              <a class="product-card" href="/catalogo?produto=cimento-cp2" aria-label="Ver Cimento CP II 50kg"><div class="product-photo"><img src="/images/product-cement.webp" alt="Saco de cimento genérico em um depósito" width="640" height="640" loading="lazy" decoding="async" /><span class="product-badge">MAIS VENDIDO</span></div><div class="product-info"><p class="product-category">CONSTRUÇÃO</p><h3>Cimento CP II 50kg</h3><p class="product-price">R$ 39,90</p><span class="product-link">VER PRODUTO <span aria-hidden="true">→</span></span></div></a>
+              <a class="product-card" href="/catalogo?produto=tinta-premium-18l" aria-label="Ver Tinta Premium Fosca 18L"><div class="product-photo"><img src="/images/product-paint.webp" alt="Balde de tinta genérico com rolo de pintura" width="640" height="640" loading="lazy" decoding="async" /><span class="product-badge badge-outline">QUALIDADE PREMIUM</span></div><div class="product-info"><p class="product-category">TINTAS</p><h3>Tinta Premium Fosca 18L</h3><p class="product-price">R$ 289,90</p><span class="product-link">VER PRODUTO <span aria-hidden="true">→</span></span></div></a>
+              <a class="product-card" href="/catalogo?produto=furadeira-impacto-650w" aria-label="Ver Furadeira de Impacto 650W"><div class="product-photo"><img src="/images/product-drill.webp" alt="Furadeira de impacto genérica com cabo e empunhadura lateral" width="640" height="640" loading="lazy" decoding="async" /><span class="product-badge">EM DESTAQUE</span></div><div class="product-info"><p class="product-category">FERRAMENTAS</p><h3>Furadeira de Impacto 650W</h3><p class="product-price">R$ 349,90</p><span class="product-link">VER PRODUTO <span aria-hidden="true">→</span></span></div></a>
+              <a class="product-card" href="/catalogo?produto=kit-conexoes" aria-label="Ver Kit de Conexões Água Fria"><div class="product-photo"><img src="/images/product-plumbing.webp" alt="Kit genérico de conexões brancas de PVC e registro" width="640" height="640" loading="lazy" decoding="async" /><span class="product-badge badge-outline">ALTA DURABILIDADE</span></div><div class="product-info"><p class="product-category">HIDRÁULICA</p><h3>Kit de Conexões Água Fria</h3><p class="product-availability">Consulte<br />disponibilidade</p><span class="product-link">VER PRODUTO <span aria-hidden="true">→</span></span></div></a>
+              <a class="product-card" href="/catalogo?produto=porcelanato-acetinado" aria-label="Ver Porcelanato Acetinado"><div class="product-photo"><img src="/images/product-tile.webp" alt="Placas de porcelanato genérico acetinado com veios discretos" width="640" height="640" loading="lazy" decoding="async" /><span class="product-badge">ACABAMENTO</span></div><div class="product-info"><p class="product-category">ACABAMENTOS</p><h3>Porcelanato Acetinado</h3><p class="product-price"><small>A partir de</small>R$ 79,90 <span class="product-unit">/ m²</span></p><span class="product-link">VER PRODUTO <span aria-hidden="true">→</span></span></div></a>
+            </div>
+          </div>
+          <div class="products-track-meta"><p id="products-hint">ARRASTE PARA VER MAIS</p><div class="products-progress" aria-hidden="true"><span></span></div><span class="products-counter"><span id="product-current">01</span> / 05</span></div>
+          <a class="catalog-callout products-reveal" href="/catalogo"><div><strong>VER CATÁLOGO COMPLETO</strong><p>Centenas de produtos para cada etapa da sua obra.</p></div><span class="catalog-rule" aria-hidden="true"></span><span class="catalog-motto" aria-hidden="true">CONSTRUA HOJE.<br />UM AMANHÃ MELHOR.</span><span class="catalog-arrow" aria-hidden="true">→</span></a>
+          <p class="products-demo-note">Produtos e preços ilustrativos para demonstração.</p>
+        </div>
+      </section>
+      <section class="trust-section" id="diferenciais" aria-labelledby="trust-title">
+        <svg class="trust-symbols" xmlns="http://www.w3.org/2000/svg" aria-hidden="true"><symbol id="trust-truck" viewBox="0 0 40 40"><path d="M4 28V10h21v18M25 16h7l5 8v4h-4M8 28H4m9 0h13"/><circle cx="10" cy="29" r="4"/><circle cx="29" cy="29" r="4"/></symbol><symbol id="trust-helmet" viewBox="0 0 40 40"><path d="M5 28h30v6H5zM8 28v-6a12 12 0 0 1 8-12m8 0a12 12 0 0 1 8 12v6M16 23V7h8v16z"/></symbol><symbol id="trust-boxes" viewBox="0 0 40 40"><path d="M12 4h16v14H12zM3 21h16v14H3zM21 21h16v14H21zM17 4v5h6V4M8 21v5h6v-5M26 21v5h6v-5"/></symbol><symbol id="trust-shield" viewBox="0 0 40 40"><path d="m20 3 14 6v10c0 9-14 17-14 17S6 28 6 19V9zM13 19l5 5 10-11"/></symbol><symbol id="trust-star" viewBox="0 0 40 40"><path d="m20 4 5 10 12 2-9 9 2 12-10-6-10 6 2-12-9-9 12-2z"/></symbol><symbol id="trust-box" viewBox="0 0 40 40"><path d="m20 3 15 8v18l-15 8-15-8V11zM5 11l15 8 15-8M20 19v18M12 7l15 8"/></symbol></svg>
+        <div class="trust-editorial">
+          <div class="trust-intro trust-reveal"><p class="trust-kicker">POR QUE ESCOLHER A GENTE</p><h2 id="trust-title">Materiais certos.<br />Atendimento que<br /><span>acompanha sua obra.</span></h2><p class="trust-description">Trabalhamos com materiais para diferentes etapas do projeto e oferecemos atendimento próximo para ajudar você a fazer as melhores escolhas.</p></div>
+          <div class="trust-benefits trust-reveal">
+            <article class="trust-benefit"><span class="trust-icon"><svg aria-hidden="true"><use href="#trust-truck"/></svg></span><div><h3>Entrega para sua região</h3><p>Agilidade e segurança para sua obra não parar.</p></div></article>
+            <article class="trust-benefit"><span class="trust-icon"><svg aria-hidden="true"><use href="#trust-helmet"/></svg></span><div><h3>Atendimento especializado</h3><p>Orientação para encontrar os materiais certos para cada etapa.</p></div></article>
+            <article class="trust-benefit"><span class="trust-icon"><svg aria-hidden="true"><use href="#trust-boxes"/></svg></span><div><h3>Tudo para cada etapa</h3><p>Da base ao acabamento, soluções reunidas em um só lugar.</p></div></article>
+          </div>
+          <div class="trust-brands trust-reveal"><div class="trust-brands-heading"><h3>Marcas parceiras</h3><span>IDENTIDADES ILUSTRATIVAS</span></div><div class="trust-brand-track" tabindex="0" role="region" aria-label="Seis marcas ilustrativas, deslize para explorar"></div></div>
+          <ul class="trust-proof trust-reveal"><li><svg aria-hidden="true"><use href="#trust-shield"/></svg><div><strong>Qualidade</strong><span>em cada entrega</span></div></li><li><svg aria-hidden="true"><use href="#trust-star"/></svg><div><strong>Atendimento</strong><span>especializado</span></div></li><li><svg aria-hidden="true"><use href="#trust-box"/></svg><div><strong>Variedade</strong><span>para todas as etapas</span></div></li><li><svg aria-hidden="true"><use href="#trust-truck"/></svg><div><strong>Entrega</strong><span>para sua região</span></div></li></ul>
+        </div>
+        <div class="trust-construction">
+          <div class="trust-photo"><img src="/images/trust-construction.webp" alt="Trabalhador de capacete diante de uma obra com estruturas de concreto e guindaste ao pôr do sol" width="1672" height="941" loading="lazy" decoding="async" /></div>
+          <div class="trust-story trust-reveal"><p class="trust-kicker">MAIS QUE MATERIAIS</p><h3>Somos parte<br /><span>dos seus planos.</span></h3><p>Construção, reforma ou aquele projeto especial. Qualidade e variedade para acompanhar cada etapa.</p></div>
+          <div class="trust-contact trust-reveal"><p class="trust-contact-title">PRONTO PARA<br />O PRÓXIMO PASSO?</p><p>Fale com nossa equipe e receba atendimento personalizado.</p><a class="trust-whatsapp" aria-label="Falar com a equipe no WhatsApp" target="_blank" rel="noopener">Falar no WhatsApp <span aria-hidden="true">→</span></a><small class="trust-contact-note"></small></div>
+        </div>
+      </section>
+      <section class="faq-section" id="duvidas" aria-labelledby="faq-title">
+        <img class="faq-environment" src="/images/faq-environment.webp" alt="" width="1672" height="941" loading="lazy" decoding="async" />
+        <div class="faq-layout">
+          <header class="faq-header faq-reveal">
+            <p class="faq-kicker">DÚVIDAS FREQUENTES</p>
+            <h2 id="faq-title">Ficou com<br /><span>alguma dúvida?</span></h2>
+            <p class="faq-intro">Encontre respostas rápidas sobre produtos, entregas, orçamento e atendimento.</p>
+            <a class="faq-contact" target="_blank" rel="noopener">FALAR COM UM ESPECIALISTA <span aria-hidden="true">→</span></a>
+          </header>
+          <div class="faq-list faq-reveal">
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-1" type="button" aria-expanded="false" aria-controls="faq-answer-1"><span class="faq-number" aria-hidden="true">01</span><span>VOCÊS FAZEM ENTREGA?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-1" role="region" aria-labelledby="faq-question-1" aria-hidden="true" inert><div class="faq-answer-inner"><p>Sim. Consulte nossa equipe para verificar disponibilidade, prazo e condições de entrega para sua região.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-2" type="button" aria-expanded="false" aria-controls="faq-answer-2"><span class="faq-number" aria-hidden="true">02</span><span>COMO SOLICITAR UM ORÇAMENTO?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-2" role="region" aria-labelledby="faq-question-2" aria-hidden="true" inert><div class="faq-answer-inner"><p>Você pode explorar os produtos pelo catálogo e entrar em contato pelo WhatsApp. Nossa equipe pode ajudar a montar um orçamento de acordo com as necessidades da sua obra.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-3" type="button" aria-expanded="false" aria-controls="faq-answer-3"><span class="faq-number" aria-hidden="true">03</span><span>POSSO CONSULTAR A DISPONIBILIDADE DE UM PRODUTO?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-3" role="region" aria-labelledby="faq-question-3" aria-hidden="true" inert><div class="faq-answer-inner"><p>Sim. A disponibilidade pode variar de acordo com o produto. Utilize o catálogo para encontrar o item desejado e consulte nossa equipe pelo WhatsApp.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-4" type="button" aria-expanded="false" aria-controls="faq-answer-4"><span class="faq-number" aria-hidden="true">04</span><span>QUAIS SÃO AS FORMAS DE PAGAMENTO?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-4" role="region" aria-labelledby="faq-question-4" aria-hidden="true" inert><div class="faq-answer-inner"><p>As formas e condições de pagamento podem variar. Entre em contato com nossa equipe para consultar as opções disponíveis.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-5" type="button" aria-expanded="false" aria-controls="faq-answer-5"><span class="faq-number" aria-hidden="true">05</span><span>POSSO COMPRAR DIRETAMENTE PELO SITE?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-5" role="region" aria-labelledby="faq-question-5" aria-hidden="true" inert><div class="faq-answer-inner"><p>O site funciona como uma vitrine digital. Você pode explorar produtos, categorias e ofertas e depois solicitar informações ou orçamento diretamente pelo WhatsApp.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-6" type="button" aria-expanded="false" aria-controls="faq-answer-6"><span class="faq-number" aria-hidden="true">06</span><span>NÃO ENCONTREI O PRODUTO QUE PROCURO. O QUE FAÇO?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-6" role="region" aria-labelledby="faq-question-6" aria-hidden="true" inert><div class="faq-answer-inner"><p>Fale com nossa equipe. Podemos verificar outras opções disponíveis e ajudar você a encontrar uma solução adequada para o seu projeto.</p></div></div>
+            </article>
+            <article class="faq-item">
+              <h3><button class="faq-question" id="faq-question-7" type="button" aria-expanded="false" aria-controls="faq-answer-7"><span class="faq-number" aria-hidden="true">07</span><span>VOCÊS AJUDAM A CALCULAR A QUANTIDADE DE MATERIAL?</span><span class="faq-plus" aria-hidden="true"></span></button></h3>
+              <div class="faq-answer" id="faq-answer-7" role="region" aria-labelledby="faq-question-7" aria-hidden="true" inert><div class="faq-answer-inner"><p>Nossa equipe pode auxiliar na escolha e na estimativa dos materiais. Para cálculos técnicos ou estruturais, recomendamos seguir a orientação do profissional responsável pela obra.</p></div></div>
+            </article>
+          </div>
+        </div>
+      </section>
+      <section class="final-cta" aria-labelledby="final-title">
+        <img class="final-cta-image" src="/images/final-house.webp" alt="Casa moderna concluída ao entardecer, com luzes acesas e materiais de construção à frente" width="1672" height="941" loading="lazy" decoding="async" />
+        <div class="final-cta-content">
+          <p class="final-kicker">PRONTO PARA CONSTRUIR?</p>
+          <h2 id="final-title">SUA OBRA<br />COMEÇA <span>AQUI.</span></h2>
+          <p class="final-intro">Da fundação ao acabamento, encontre tudo o que precisa para transformar seus planos em realidade.</p>
+          <div class="final-actions">
+            <a class="final-whatsapp" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" aria-hidden="true"><path d="M20.5 11.5a8.5 8.5 0 0 1-12.7 7.4L3 20l1.1-4.8a8.5 8.5 0 1 1 16.4-3.7Z" stroke="currentColor" stroke-width="1.5"/><path d="M8 7.5c0 4.5 4 8.5 8.5 8.5l1-2.5-3-1-1 1c-1.5-.5-2.5-1.5-3-3l1-1-1-3-2.5 1Z" stroke="currentColor" stroke-width="1.2" stroke-linejoin="round"/></svg>FALAR COM UM ESPECIALISTA <span aria-hidden="true">→</span></a>
+            <a class="final-catalog" href="/catalogo">EXPLORAR CATÁLOGO <span aria-hidden="true">→</span></a>
+          </div>
+          <ul class="final-benefits">
+            <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M4 28V10h21v18M25 16h7l5 8v4h-4M8 28H4m9 0h13"/><circle cx="10" cy="29" r="4"/><circle cx="29" cy="29" r="4"/></svg><span><strong>ENTREGA</strong>Para sua região</span></li>
+            <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="m20 3 14 6v10c0 9-14 17-14 17S6 28 6 19V9zM13 19l5 5 10-11"/></svg><span><strong>QUALIDADE</strong>Em cada etapa</span></li>
+            <li><svg viewBox="0 0 40 40" aria-hidden="true"><path d="M5 28h30v6H5zM8 28v-6a12 12 0 0 1 8-12m8 0a12 12 0 0 1 8 12v6M16 23V7h8v16z"/></svg><span><strong>ATENDIMENTO</strong>Especializado</span></li>
+          </ul>
+        </div>
+      </section>
+    </main>
+    <footer class="site-footer">
+      <div class="footer-inner">
+        <div class="footer-columns">
+          <div class="footer-brand"><a href="#inicio" aria-label="Alicerce, voltar ao início"><svg viewBox="0 0 48 48" fill="none" aria-hidden="true"><path d="M5 42V19L24 5l19 14v23H30V28H18v14H5Z" stroke="currentColor" stroke-width="4"/><path d="m24 5 19 14v23H30V28H24" stroke="#f47730" stroke-width="4"/></svg><strong>ALICERCE<span>.</span></strong></a><p>Materiais para construir,<br />reformar e realizar.</p></div>
+          <nav class="footer-nav" aria-label="Navegação do rodapé"><h2>NAVEGAÇÃO</h2><a href="#inicio">Início</a><a href="/catalogo">Catálogo</a><a href="#categorias">Categorias</a><a href="#destaques">Destaques</a><a href="#diferenciais">Sobre</a><a href="#duvidas">Dúvidas frequentes</a></nav>
+          <div class="footer-service"><h2>ATENDIMENTO</h2><a class="footer-whatsapp" target="_blank" rel="noopener">Fale com nossa equipe no WhatsApp <span aria-hidden="true">↗</span></a><p>Atendimento para ajudar em cada etapa da sua obra.</p></div>
+          <p class="footer-motto">MATERIAIS<br />IDEIAS<br />PROJETOS<br />REALIZAÇÕES<span></span></p>
+        </div>
+        <div class="footer-bottom"><small>© <span id="footer-year">2026</span> Alicerce. Todos os direitos reservados.</small><a href="#inicio">VOLTAR AO INÍCIO <span aria-hidden="true">↑</span></a></div>
+      </div>
+      <div class="footer-word" aria-hidden="true">CONSTRUA<span>.</span></div>
+    </footer>
+    <dialog class="demo-dialog" aria-labelledby="dialog-title"><button class="dialog-close" aria-label="Fechar">×</button><p class="eyebrow">ALICERCE · DEMONSTRAÇÃO</p><h2 id="dialog-title">Produtos</h2><p id="dialog-message"></p><button class="button button-primary dialog-return">Voltar à experiência <span aria-hidden="true">→</span></button></dialog>
+    <script type="module" src="/src/main.js"></script>
+  </body>
+</html>
